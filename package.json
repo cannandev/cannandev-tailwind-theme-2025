@@ -80,7 +80,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx http-server && npx tailwindcss -i src/input.css -o dist/output.css --watch"
+    "start": "npx http-server",
+		"watch": "npx tailwindcss -i src/input.css -o dist/output.css --watch"
   },
   "repository": {
     "type": "git",
