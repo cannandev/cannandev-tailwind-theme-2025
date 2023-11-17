@@ -9,7 +9,4 @@ This time we have a pure HTML application with a Tailwind CSS custom theme. This
 Checkout this repository locally, then:
 
 1. Run `npm install` to install all dependencies.
-1. Run `npx http-server` to start your local server. Follow [directions](https://www.npmjs.com/package/http-server) if you need to install this globally.
-
-To watch and compile CSS changes:
-1. In another terminal, run `npx tailwindcss -i src/input.css -o dist/output.css --watch`.
+1. Run `npm start` to start http-server and watch for new CSS changes:
