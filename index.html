@@ -10,10 +10,10 @@
 	<title>cannandev | Claire Annan</title>
 </head>
 
-<body class="bg-slate-800 text-yellow-500">
+<body class="bg-slate-800 text-yellow-50">
 	<a class="sr-only" href="#main-content">Skip to main</a>
-	<header>
-		<nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+	<header class="fixed w-full bg-slate-800">
+		<nav class="mx-auto flex max-w-5xl items-center justify-between p-6 lg:px-8" aria-label="Global">
 			<div class="flex lg:flex-1">
 				<a href="#" class="-m-1.5 p-1.5">
 					<span class="sr-only">cannandev</span>
@@ -21,7 +21,7 @@
 				</a>
 			</div>
 			<div class="flex lg:hidden">
-				<button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-yellow-600">
+				<button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-yellow-500">
 					<span class="sr-only">Open main menu</span>
 					<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
 						aria-hidden="true">
@@ -38,7 +38,7 @@
 				<a href="#" class="text-sm uppercase font-semibold leading-6 text-white hover:text-yellow-500">Contact</a>
 			</div>
 			<div class="hidden lg:flex lg:flex-1 lg:justify-end">
-				<span class="font-semibold px-2">Theme</span>
+				<span class="font-semibold px-2 text-yellow-500">Theme</span>
 				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
 					class="w-6 h-6">
 					<path stroke-linecap="round" stroke-linejoin="round"
@@ -62,7 +62,7 @@
 						<span class="sr-only">Your Company</span>
 						<img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
 					</a>
-					<button type="button" class="-m-2.5 rounded-md p-2.5 text-yellow-600">
+					<button type="button" class="-m-2.5 rounded-md p-2.5 text-yellow-500">
 						<span class="sr-only">Close menu</span>
 						<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
 							aria-hidden="true">
@@ -95,33 +95,47 @@
 		</div>
 	</header>
 	<main id="main-content">
-		<section id="hero" class="border border-b-white">
-			<h1 class="text-3xl font-bold">
-				Hi! My name is
-			</h1>
-			<ul>
+		<!-- Hero component -->
+		<section class="mx-auto max-w-5xl px-8 py-16 h-screen lg:flex flex-auto gap-8 items-center">
+			<div class="lg:w-1/2 flex flex-col justify-evenly items-start h-full">
+				<h1 class="text-5xl font-bold lg:font-extrabold">
+					Hi! I'm Claire Annan, alias
+					<strong class="text-yellow-500">@cannandev</strong>
+				</h1>
+				<p class="text-xl leading-12 max-w-prose">I am a consulting software engineer. I want everyone to have a good
+					experience
+					using the digital products I build. That's why I help software teams apply best practices. Let me show you how
+					to integrate these
+					into your development strategy.</p>
+				<a class="py-4 px-8 text-lg uppercase  bg-yellow-600 text-slate-800 font-semibold rounded-lg border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2"
+					href="#">Learn more</a>
+			</div>
+			<div class="lg:w-1/2 h-auto">
+				<img class="mx-auto rounded-full h-32 border-8 border-yellow-600 lg:p-4 lg:h-full"
+					src="https://tailwindcss.com/img/erin-lindford.jpg" alt="Claire Annan headshot">
+			</div>
+		</section>
+		<!-- Skills component -->
+		<section class="p-8 bg-yellow-600 text-slate-800">
+			<h2 class="lg:hidden text-3xl font-bold">Skills</h2>
+			<ul class="lg:flex gap-12 justify-around">
 				<li>software engineer</li>
 				<li>federal consultant</li>
-				<li>drupal enthusiast</li>
+				<li>content management architect</li>
 				<li>frontend developer</li>
 				<li>accessiblity advocate</li>
-				<li>ux promoter</li>
+				<li>ux practitioner</li>
 			</ul>
-			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo laborum vitae minus, accusantium impedit nisi
-				suscipit dolor voluptate nostrum provident ducimus perferendis quibusdam nemo recusandae sed et quaerat autem
-				eum.</p>
-			<img id="headshot" class="block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0"
-				src="https://tailwindcss.com/img/erin-lindford.jpg" alt="">
-			<a class="px-4 py-1 text-sm  bg-yellow-600 text-slate-800 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2"
-				href="#">Learn more</a>
 		</section>
-		<section id="featured" class="border border-b-white">
+		<!-- Featured info component -->
+		<section class="mx-auto max-w-5xl p-8">
 			<h2>Human-Centered Engineering plug!</h2>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, sunt! Necessitatibus inventore repellat numquam
 				sed voluptate, amet cum voluptas suscipit, ratione consectetur quis modi officia et aperiam earum officiis sit!
 			</p>
 		</section>
-		<section id="testimonials" class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
+		<!-- Testimonials component -->
+		<section class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
 			<div
 				class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20">
 			</div>
@@ -151,19 +165,16 @@
 			</div>
 		</section>
 	</main>
-	<footer>
-		<nav>
+	<footer class="mx-auto max-w-5xl p-8">
+		<ul>
 			<a href="#">Home</a>
 			<a href="#">About</a>
 			<a href="#">Experience</a>
 			<a href="#">Contact</a>
-		</nav>
-		<span>&copy; 2023. All rights reserved.</span>
-		<ul>
-			<li><a href="#">twitter</a></li>
-			<li><a href="#">linkedin</a></li>
-			<li><a href="#">github</a></li>
 		</ul>
+		<span>&copy; 2023. All rights reserved.</span>
+		<p>Follow me on <a href="#">Twitter</a> &amp; <a href="#">Github</a> or just connect with me on <a
+				href="#">LinkedIn</a>.</p>
 	</footer>
 </body>
 
