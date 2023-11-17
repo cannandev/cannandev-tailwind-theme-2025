@@ -111,8 +111,8 @@
 					href="#">Learn more</a>
 			</div>
 			<div class="lg:w-1/2 h-auto">
-				<img class="mx-auto rounded-full h-32 border-8 border-yellow-600 lg:p-4 lg:h-full"
-					src="https://tailwindcss.com/img/erin-lindford.jpg" alt="Claire Annan headshot">
+				<img class="mx-auto rounded-full -scale-x-100 h-32 border-8 border-yellow-600 lg:p-4 lg:h-full"
+					src="/src/img/headshot.jpeg" alt="Claire Annan headshot">
 			</div>
 		</section>
 		<!-- Skills component -->
@@ -186,7 +186,7 @@
 					</div>
 					<img src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
 						alt="Product screenshot"
-						class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+						class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] lg:-ml-4 lg:-ml-0"
 						width="2432" height="1442">
 				</div>
 			</div>
@@ -222,16 +222,46 @@
 			</div>
 		</section>
 	</main>
-	<footer class="mx-auto max-w-5xl p-8">
-		<ul>
-			<a href="#">Home</a>
-			<a href="#">About</a>
-			<a href="#">Experience</a>
-			<a href="#">Contact</a>
-		</ul>
-		<span>&copy; 2023. All rights reserved.</span>
-		<p>Follow me on <a href="#">Twitter</a> &amp; <a href="#">Github</a> or just connect with me on <a
-				href="#">LinkedIn</a>.</p>
+	<footer>
+		<div class="mx-auto max-w-5xl px-8 py-16">
+			<div class="flex flex-col lg:flex-row justify-between">
+				<!-- footer nav links -->
+				<ul class="text-xl font-semibold pb-12 lg:pb-0">
+
+					<li><a href="/">Home</a></li>
+
+					<li><a href="/about/">About</a></li>
+
+					<li><a href="/posts/">Experience</a></li>
+
+					<li><a href="/contact/">Contact</a></li>
+				</ul>
+				<!-- footer social links -->
+				<nav class="text-2xl text-white lg:w-1/2 lg:text-3xl lg:mt-0 lg:place-self-start lg:text-right">
+					Follow me on
+					<a href="https://twitter.com/cannandev" class="underline text-indigo-200"
+						title="My Twitter feed @cannandev">Twitter</a>
+					&amp;
+					<a href="https://github.com/cannandev" class="underline text-indigo-200" title="My GitHub repos">Github</a>
+					or just connect with me on
+					<a href="https://linkedin.com/in/ClaireAnnan" class="underline text-indigo-200"
+						title="My LinkedIn page">LinkedIn</a>.
+				</nav>
+			</div>
+			<!-- footer meta info -->
+			<div class="flex flex-col space-y-6 items-end lg:flex-row lg:justify-between">
+				<small class="lg:w-1/2 py-8">© Copyright 2023 Claire Annan, @cannandev. All
+					rights reserved. Various
+					trademarks
+					held by their respective owners.</small>
+
+				<a href="/"><img class="h-10 w-auto" src="/src/img/logo-white.png"
+						alt="Home of Claire Annan Blog @cannandev"></a>
+			</div>
+		</div>
+		<figure>
+			<img class="w-full opacity-70" src="/src/img/background.jpeg" alt="Claire hard at work in a cafe.">
+		</figure>
 	</footer>
 </body>
 
